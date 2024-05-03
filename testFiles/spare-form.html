@@ -1,0 +1,125 @@
+<!-- Queries taken out of my-form - Brielle -->
+<!-- Query 3 showinh all the dams with a specfic number of multiple births-->
+<!-- <h4 id="query_header">Find all the dams with have multiple births</h4>
+<form action="/query3-handler" method="POST">
+    <div>
+        Enter Specific Number of births:
+        <br />
+        <input type="text" name="multi_births">
+        Example Input: 2 (to see all the dams who have had 2 or more babies at once)
+        <br />
+        <input type="submit" value="Submit">(Query 3)
+    </div>
+</form> -->
+
+<h2 id="section_header">Queries Based on Progeny</h2>
+<!-- Query 1 For Progeny showing all the kids to a Dam-->
+<h4 id="query_header">Find all the kids belonging to a specfic Dam</h4>
+<form action="/query1-handler" method="POST">
+    <div>
+        Enter Dam tag:
+        <br />
+        <input type="text" name="dam_tag"> Example Input: 19211
+        <br />
+        <label for="checkbox">Show Weights</label>
+        <intput type="checkbox" id="checkbox" name ="checkbox">
+        <br>
+        <input type="submit" value="Submit"> (Query1)
+    </div>
+</form>
+
+OLD QUERY 1
+ <h4 id="query_header">Find all the kids belonging to a specfic Dam</h4>
+        <form action="/query1-handler" method="POST">
+            <div>
+                Enter Dam tag:
+                <br />
+                <input type="text" name="dam_tag"> Example Input: 19211
+                <br />
+                <label for="checkbox">Show Weights</label>
+                <intput type="checkbox" id="checkbox" name ="checkbox">
+                <br>
+                <input type="submit" value="Submit"> (Query1)
+            </div>
+        </form> -->
+        <!-- Query 1 For Progeny showing all the kids to a Dam
+
+
+ <!- Query 4 showing all the kids born to a specfic Sire-->
+ <form action="/query6-handler" method="POST">
+     <fieldset>
+        <legend id="section_header">See a List of Dams with a specified Average Birth Weight</legend>
+        <div>
+            <label for="weight_low">Minimum Average Birth Weight of Kids:</label><br>
+            <input type="text" id="weight_low" name="weight_low" placeholder="Example Input: 7.0" required><br>
+        </div>
+        <div>
+            <label for="weight_high">Maximum Average Birth Weight of Kids:</label><br>
+            <input type="text" id="weight_high" name="weight_high" placeholder="Example Input: 7.9" required><br>
+        </div>
+        <div>
+            <input type="submit" value="Submit"> (Query6)
+        </div>
+    </fieldset>
+ </form>
+
+  <!-- Query 6 -->
+  <h4 id="query_header">See all Dams with a specified Average Weight</h4>
+  <form action="/query6-handler" method="POST">
+      <div>
+          Enter Specific Average Weight Range to filter out specfic dams:
+          <br />
+          Low: 
+          <input type="text" name="weight_low">
+          Example: 7.3
+          <br />
+          <br>
+            High:
+            <input type="text" name="weight_high">
+            Example: 8.0
+            <br />
+            <input type="submit" value="submit">(Query 6)
+        </div>
+  </form>
+
+<!-- Query 7 -->
+<h4 id="query_header">See all Goats born between specified Dates</h4>
+<form action="/query7-handler" method="POST">
+    <div>
+        Enter Specfic Date Range:
+        <br />
+        Start Date: 
+        <input type="text" name="start_date">
+        Example: 2021-03-06 (YYYY-MM-DD)
+        <br />
+        <br>
+          End Date:
+          <input type="text" name="end_date">
+          Example: 2021-03-10 (YYYY-MM-DD)
+          <br />
+          <input type="submit" value="submit"> (Query 7)
+      </div>
+</form>
+
+
+
+
+
+
+ <h4 id="query_header">See goat information for goats born on a specific day</h4>
+        <form action="/query2-handler" method="POST">
+            <div>
+		        Enter Numeric Month:
+                <br />
+		        <input type="text" name="dob_month">
+                Example Input: 3
+                <br />
+                <br />
+                Enter Input:
+                <br />
+		        <input type="text" name="dob_day">
+                Example day: 18
+                <br />
+                <input type="submit" value="Submit"> (Query 2)
+            </div>
+        </form>
